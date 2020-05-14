@@ -9,5 +9,5 @@ spring:
         port: 5672
         username: guest
         password: guest   
-#     jap:
-#       show-sql: true
+  jap:
+      show-sql: true
