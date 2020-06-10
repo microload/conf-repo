@@ -1,0 +1,16 @@
+zuul:
+   ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+zuul:
+  sensitive-headers: 
+    routes:
+      aaaaaa:
+        path: /myProduct/**
+        serviceId: product
+        sensitiveHeaders:
+    ignored-patterns:
+      - /**/product/listForOrder
+  management:
+    security:
+      enabled: false
