@@ -1,6 +1,6 @@
 zuul:
   sensitive-headers: 
-    routes:
+  routes:
       aaaaaa:
         path: /myProduct/**
         serviceId: product
